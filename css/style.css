@@ -1,0 +1,235 @@
+.hide {
+  display: none;
+}
+
+body {
+  background-image: url("../img/hero.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+header {
+  margin: 0px 0 0 10px;
+  height: 10vh;
+  min-height: 75px;
+  font: 'Bad Script', sans-serif, ;
+}
+
+.nav {
+  position: relative;
+  padding-top: 10px;
+}
+
+#menu {
+  right: 0;
+  left: 20%;
+  top: 0px;
+  position: absolute;
+}
+
+.menuRow {
+  position: relative;
+}
+
+#hamburgerButton:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(#d53369, #daae51);
+  text-decoration: overline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.navItem {
+  margin-top: 10px;
+}
+
+.labelText {
+  height: 100%;
+}
+
+.label, .icon-box a {
+  text-align: left;
+  transition: background 1s ease;
+  font-family: "Bad Script", cursive;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* hover gradients  */
+  input[type=checkbox]:checked + label .labelText {
+  background: -webkit-linear-gradient(#d53369, #daae51);
+  text-decoration: overline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: default;
+  }
+
+
+ input[type=checkbox]:not(:checked):hover + label .labelText {
+  background: -webkit-linear-gradient(#d1ffd7, #bfd6ff);
+  text-decoration: overline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type=checkbox]:checked + label .labelIcons {
+background: -webkit-linear-gradient(#d53369, #daae51);
+text-decoration: overline;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration: none;
+cursor: default;
+}
+
+
+input[type=checkbox]:not(:checked):hover + label .labelIcons {
+background: -webkit-linear-gradient(#d1ffd7, #bfd6ff);
+text-decoration: overline;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.fa-gradient:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#d1ffd7), to(#bfd6ff));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.signature-box {
+  margin: 50px 0 40px 0;
+  height: 75vh;
+}
+
+.signature {
+  display: block;
+  max-height: 200px;
+  margin: 0 auto;
+}
+
+.item {
+  height: 70vh;
+  background-size: cover;
+}
+
+.portfolio {
+  height:75vh;
+  min-height: 375px;
+}
+
+.carousel {
+  height: inherit;
+}
+
+#slide1 {
+  background-image: url('../img/4.png');
+}
+
+#slide2 {
+    background-image: url('../img/5.png');
+}
+
+#slide3 {
+    background-image: url('../img/6.png');
+}
+
+.contact-box {
+  height: 70vh;
+  min-height: 375px;
+  margin-bottom: 50px;
+}
+
+.contact-row{
+  height:inherit;
+}
+
+.wufoo-column {
+height: 500px;
+}
+
+.myinfo {
+  margin: 20px 0 0 0;
+}
+
+.gmap {
+  display: block;
+  margin: 0 auto;
+}
+
+.gmap-row{
+    margin: 20px 0 0 0;
+}
+
+footer {
+  padding-left: 0 !important;
+  width:100%;
+  bottom: 0;
+  position: fixed;
+  height: 45px;
+  background-image: #fff;
+  z-index: 100;
+  opacity: 1;
+}
+
+footer:before {
+   padding-left: 0 !important;
+   background-image: -webkit-linear-gradient(rgba(213,51,105, 0.3), rgba(218,174,81, 0.3));
+   position: fixed;
+   bottom:0;
+   width: 100%;
+   height: 45px;
+   opacity: 0;
+   z-index: -100;
+   transition: opacity 1s;
+   filter:blur(10px);
+ }
+
+ footer:hover:before {
+   opacity: 1;
+   }
+
+.icons {
+  float: left;
+  bottom: 0;
+  position: fixed;
+  height: 42px;
+  width: 100%;
+  margin: 0 0 0px 0;
+}
+
+.icon {
+  font-size: 1.5em;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  .labelText {
+  }
+  .labelIcons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .labelText {
+  display: none
+  }
+  .labelIcon {
+  }
+  .contact-box {
+    height: auto;
+  }
+  .wufoo-column, .myinfo {
+    border-bottom: 2px solid black;
+  }
+}
