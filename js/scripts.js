@@ -15,7 +15,6 @@ const portfolio = document.getElementById('portfolio');
 const aboutMe = document.getElementById('aboutMe');
 const contact = document.getElementById('contact');
 
-console.log('alive');
 
 // button swappers and display toggles
 amButton.addEventListener('click', e => {
