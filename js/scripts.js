@@ -67,16 +67,16 @@ contButton.addEventListener('click', e => {
 // nav toggle
 hamButton.addEventListener("click", e => {
   $('.navItem').animate({
-   height: 'toggle'
-    })
-  });
+    height: 'toggle'
+  })
+});
 
 // onLoad Function
-$(document).ready(function(){
+$(document).ready(function() {
   $(aboutMe).hide();
   $(contact).hide();
   $(portfolio).hide();
-$('.navItem').animate({
-  height: 'toggle'
- });
+  $('.navItem').animate({
+    height: 'toggle'
+  });
 });

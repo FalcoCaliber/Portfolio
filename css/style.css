@@ -8,14 +8,14 @@ body {
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  height:100vh;
+  height: 100vh;
 }
 
 header {
   margin: 0px 0 0 10px;
   height: 10vh;
   min-height: 75px;
-  font: C ;
+  font: C;
 }
 
 .nav {
@@ -62,46 +62,44 @@ header {
 }
 
 /* hover gradients  */
-  input[type=checkbox]:checked + label .labelText {
+
+input[type=checkbox]:checked+label .labelText {
   background: -webkit-linear-gradient(#d53369, #daae51);
   text-decoration: overline;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   cursor: default;
-  }
+}
 
-
- input[type=checkbox]:not(:checked):hover + label .labelText {
+input[type=checkbox]:not(:checked):hover+label .labelText {
   background: -webkit-linear-gradient(#d1ffd7, #bfd6ff);
   text-decoration: overline;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-input[type=checkbox]:checked + label .labelIcons {
-background: -webkit-linear-gradient(#d53369, #daae51);
-text-decoration: overline;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-decoration: none;
-cursor: default;
+input[type=checkbox]:checked+label .labelIcons {
+  background: -webkit-linear-gradient(#d53369, #daae51);
+  text-decoration: overline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: default;
 }
 
-
-input[type=checkbox]:not(:checked):hover + label .labelIcons {
-background: -webkit-linear-gradient(#d1ffd7, #bfd6ff);
-text-decoration: overline;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+input[type=checkbox]:not(:checked):hover+label .labelIcons {
+  background: -webkit-linear-gradient(#d1ffd7, #bfd6ff);
+  text-decoration: overline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .fa-gradient:hover {
-	background: -webkit-gradient(linear, left top, left bottom, from(#d1ffd7), to(#bfd6ff));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d1ffd7), to(#bfd6ff));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 .signature-box {
   margin: 50px 0 40px 0;
@@ -126,7 +124,7 @@ text-decoration: overline;
   width: auto;
 }
 
-.carousel-control{
+.carousel-control {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,6 +138,7 @@ text-decoration: overline;
 .carousel-control i:hover {
   color: #d53369;
 }
+
 .carousel-caption {
   display: block;
   margin: 0 auto;
@@ -152,21 +151,22 @@ text-decoration: overline;
   font-size: 2.5em;
   font-weight: bold;
   color: black;
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255, 255, 255, .9);
+  border: 2px black solid;
   border-radius: 25px;
 }
 
 .item {
   height: 70vh;
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .portfolio {
-  height:70vh;
+  height: 70vh;
   min-height: 375px;
-  width:auto;
+  width: auto;
 }
 
 .carousel {
@@ -180,11 +180,11 @@ text-decoration: overline;
 }
 
 #slide2 {
-    background-image: url('../img/restaurant.png');
+  background-image: url('../img/restaurant.png');
 }
 
 #slide3 {
-    background-image: url('../img/6.png');
+  background-image: url('../img/6.png');
 }
 
 .about-me-text {
@@ -203,18 +203,17 @@ text-decoration: overline;
   margin-bottom: 50px;
 }
 
-.contact-row{
-  height:inherit;
+.contact-row {
+  height: inherit;
 }
 
 .wufoo-column {
-height: 500px;
+  height: 500px;
 }
 
 .myinfo {
   margin: 20px 0 0 0;
   text-align: center;
-
 }
 
 .gmap {
@@ -222,13 +221,13 @@ height: 500px;
   margin: 0 auto;
 }
 
-.gmap-row{
-    margin: 20px 0 0 0;
+.gmap-row {
+  margin: 20px 0 0 0;
 }
 
 footer {
   padding-left: 0 !important;
-  width:100%;
+  width: 100%;
   bottom: 0;
   position: fixed;
   height: 45px;
@@ -238,21 +237,21 @@ footer {
 }
 
 footer:before {
-   padding-left: 0 !important;
-   background-image: -webkit-linear-gradient(rgba(213,51,105, 0.3), rgba(218,174,81, 0.3));
-   position: fixed;
-   bottom:0;
-   width: 100%;
-   height: 45px;
-   opacity: 0;
-   z-index: -100;
-   transition: opacity 1s;
-   filter:blur(10px);
- }
+  padding-left: 0 !important;
+  background-image: -webkit-linear-gradient(rgba(213, 51, 105, 0.3), rgba(218, 174, 81, 0.3));
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 1s;
+  filter: blur(10px);
+}
 
- footer:hover:before {
-   opacity: 1;
-   }
+footer:hover:before {
+  opacity: 1;
+}
 
 .icons {
   float: left;
@@ -272,8 +271,7 @@ footer:before {
 }
 
 @media screen and (min-width:768px) {
-  .labelText {
-  }
+  .labelText {}
   .labelIcons {
     display: none;
   }
@@ -281,10 +279,9 @@ footer:before {
 
 @media screen and (max-width: 767px) {
   .labelText {
-  display: none
+    display: none
   }
-  .labelIcon {
-  }
+  .labelIcon {}
   .contact-box {
     height: auto;
   }

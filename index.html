@@ -11,42 +11,37 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- fontAweseom -->
+  <!-- fontAwesome -->
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Bad+Script|Encode+Sans+Condensed" rel="stylesheet">
   <!-- styles -->
   <link href="css/style.css" rel="stylesheet">
-
-
 </head>
+
 <body>
 
-<header>
-<div class="container-fluid nav clearfix">
-  <div class="row menuRow">
+  <header>
+    <div class="container-fluid nav clearfix">
+      <div class="row menuRow">
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
-        <i class="fas fa-bars fa-3x" id="hamburgerButton"></i>
+          <i class="fas fa-bars fa-3x" id="hamburgerButton"></i>
         </div>
         <div id="menu" class="">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="aboutMeSwitch" /><label class="label navButton" for="aboutMeSwitch" id='amButton'><span class='labelText'>About Me</span> <span><i class="fas fa-user-circle fa-2x labelIcons"></i></span></label></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="portfolioSwitch" /><label class="label navButton" for="portfolioSwitch" id='portButton'><span class='labelText'>Portfolio</span> <span><i class="far fa-folder-open fa-2x labelIcons"></i></span></label></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="contactSwitch" /><label class="label navButton" for="contactSwitch" id='contButton'><span class='labelText'>Contact</span> <span><i class="far fa-address-book fa-2x labelIcons"></i></span></label></div>
-            </div>
-          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="aboutMeSwitch" /><label class="label navButton" for="aboutMeSwitch" id='amButton'><span class='labelText'>About Me</span> <span><i class="fas fa-user-circle fa-2x labelIcons"></i></span></label></div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="portfolioSwitch" /><label class="label navButton" for="portfolioSwitch" id='portButton'><span class='labelText'>Portfolio</span> <span><i class="far fa-folder-open fa-2x labelIcons"></i></span></label></div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 navItem"><input class="hide" type="checkbox" id="contactSwitch" /><label class="label navButton" for="contactSwitch" id='contButton'><span class='labelText'>Contact</span> <span><i class="far fa-address-book fa-2x labelIcons"></i></span></label></div>
+        </div>
+      </div>
     </div>
-
-
-  </div>
-</header>
-
+  </header>
 
   <!-- signature hero -->
   <div class="container-fluid signature-box" id='signatureBox'>
     <img class="signature" src="img/signaturetrans.png" alt="joseph r aguilar's signature">
   </div>
 
-   <!-- Portfolio Carousel -->
+  <!-- Portfolio Carousel -->
   <div class="container portfolio" id='portfolio'>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -76,80 +71,66 @@
       </div>
 
       <!-- Carousel Controls -->
-<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
   <i class="fas fa-chevron-left fa-3x " aria-hidden="true"></i>
 </a>
-<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
   <i class="fas fa-chevron-right fa-3x " aria-hidden="true"></i>
 </a>
-</div>
+    </div>
   </div>
 
-<!-- about me -->
-<div class="container">
-<div class="about-me" id='aboutMe'>
-  <div class="row">
-    <div class="col-md-12 about-me-text">
-      <p>I am a 23-year-old extroverted individual who is motivated, ambitious, and friendly. Currently a student at California State University, Fresno, I am expecting my B.A. in Business with an emphasis on Computer Information Systems in 2019. During this time, I am diligently honing my skills as a front-end web developer at Geekwise Academy.</p>
-<p>I spend my free time enjoying a good cup of coffee, learning about computer hard-ware & software, and reading the latest block-chain news.</p>
-<p>I am currently serving part time at a restaurant but am in the process of starting a career in software coding. Feel free to contact me if you need a responsive website built or have any other questions!</p>
-</p>
-</div>
-  </div>
+  <!-- about me -->
+  <div class="container">
+    <div class="about-me" id='aboutMe'>
+      <div class="row">
+        <div class="col-md-12 about-me-text">
+          <p>I am a 23-year-old extroverted individual who is motivated, ambitious, and friendly. Currently a student at California State University, Fresno, I am expecting my B.A. in Business with an emphasis on Computer Information Systems in 2019. During
+            this time, I am diligently honing my skills as a front-end web developer at Geekwise Academy.</p>
+          <p>I spend my free time enjoying a good cup of coffee, learning about computer hard-ware & software, and reading the latest block-chain news.</p>
+          <p>I am currently serving part time at a restaurant but am in the process of starting a career in software coding. Feel free to contact me if you need a responsive website built or have any other questions!</p>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
-
-<!-- contact -->
-<div class="container contact-box" id='contact'>
-  <div class="row contact-row"  >
-    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 wufoo-column">
-      <iframe class="wufooform center"
-          height="500"
-          width="90%"
-          allowTransparency="true"
-          frameborder="0"
-          scrolling="yes"
-          style=""
-          src="https://josephraguilar.wufoo.com/embed/ztfnl8p1jo7svn/">
+  <!-- contact -->
+  <div class="container contact-box" id='contact'>
+    <div class="row contact-row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 wufoo-column">
+        <iframe class="wufooform center" height="500" width="90%" allowTransparency="true" frameborder="0" scrolling="yes" style="" src="https://josephraguilar.wufoo.com/embed/ztfnl8p1jo7svn/">
       </iframe>
-    </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-      <div class="row myinfo">
-            <h1 class="center">My Contact Information</h1>
-            <h3 class="center">Phone:       <span>559-623-8938</span></h3>
-            <h3 class="center">Email:       josephraguilar@gmail.com</h3>
       </div>
-      <div class="row gmap-row">
-        <!-- <div class="gmap-container"> -->
-          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.603340567745!2d-119.78799278471205!3d36.73208657996256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4f58091%3A0xf082a7e633ee41f0!2s700+Van+Ness+Ave%2C+Fresno%2C+CA+93721!5e0!3m2!1sen!2sus!4v1521688433245" align="center" width="80%" height="400" frameborder="0" allowfullscreen></iframe>
-        <!-- </div> -->
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="row myinfo">
+          <h1 class="center">My Contact Information</h1>
+          <h3 class="center">Phone:       <span>559-623-8938</span></h3>
+          <h3 class="center">Email:       josephraguilar@gmail.com</h3>
+        </div>
+
+        <div class="row gmap-row">
+          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.603340567745!2d-119.78799278471205!3d36.73208657996256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4f58091%3A0xf082a7e633ee41f0!2s700+Van+Ness+Ave%2C+Fresno%2C+CA+93721!5e0!3m2!1sen!2sus!4v1521688433245"
+            align="center" width="80%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid footer clearfix">
-  <div class="row icons">
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
-      <a href="https://github.com/josephraguilar"><i class="fab fa-github-square  fa-gradient icon"></i> </a>
+  <footer class="container-fluid footer clearfix">
+    <div class="row icons">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
+        <a href="https://github.com/josephraguilar"><i class="fab fa-github-square  fa-gradient icon"></i> </a>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
+        <a href="https://www.linkedin.com/in/joseph-aguilar-53809b167/"><i class="fab fa-linkedin fa-gradient icon"></i> </a>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
+        <a href="https://www.facebook.com/joe.aguilar.921"><i class="fab fa-facebook-square fa-gradient icon"></i> </a>
+      </div>
+
     </div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
-      <a href="https://www.linkedin.com/in/joseph-aguilar-53809b167/"><i class="fab fa-linkedin fa-gradient icon"></i> </a>
-    </div>
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 icon-box">
-      <a href="https://www.facebook.com/joe.aguilar.921"><i class="fab fa-facebook-square fa-gradient icon"></i> </a>
-    </div>
-
-    </div>
-  </div>
-</div>
-</footer>
-
-
-</div>
-
-
+  </footer>
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
